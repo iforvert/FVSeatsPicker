@@ -19,6 +19,8 @@
 		AC8D4D1E1DD83B5F0016404C /* FVSeatsPickerIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D4D1B1DD83B5F0016404C /* FVSeatsPickerIndexView.m */; };
 		AC8D4D211DD83C840016404C /* districtOne.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC8D4D1F1DD83C840016404C /* districtOne.plist */; };
 		AC8D4D221DD83C840016404C /* districtTwo.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC8D4D201DD83C840016404C /* districtTwo.plist */; };
+		AC8D4D251DD84AE70016404C /* FVSeatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D4D241DD84AE70016404C /* FVSeatsViewController.m */; };
+		AC8D4D281DD8561B0016404C /* NSDictionary+FVExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D4D271DD8561B0016404C /* NSDictionary+FVExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		AC8D4D1B1DD83B5F0016404C /* FVSeatsPickerIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FVSeatsPickerIndexView.m; sourceTree = "<group>"; };
 		AC8D4D1F1DD83C840016404C /* districtOne.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = districtOne.plist; sourceTree = "<group>"; };
 		AC8D4D201DD83C840016404C /* districtTwo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = districtTwo.plist; sourceTree = "<group>"; };
+		AC8D4D231DD84AE70016404C /* FVSeatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FVSeatsViewController.h; sourceTree = "<group>"; };
+		AC8D4D241DD84AE70016404C /* FVSeatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FVSeatsViewController.m; sourceTree = "<group>"; };
+		AC8D4D261DD8561B0016404C /* NSDictionary+FVExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FVExtension.h"; sourceTree = "<group>"; };
+		AC8D4D271DD8561B0016404C /* NSDictionary+FVExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FVExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,8 @@
 		AC8322031DD836A4007FDA75 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				AC8D4D261DD8561B0016404C /* NSDictionary+FVExtension.h */,
+				AC8D4D271DD8561B0016404C /* NSDictionary+FVExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -103,6 +111,8 @@
 			children = (
 				AC8D4D051DD837FB0016404C /* FVViewController.h */,
 				AC8D4D061DD837FB0016404C /* FVViewController.m */,
+				AC8D4D231DD84AE70016404C /* FVSeatsViewController.h */,
+				AC8D4D241DD84AE70016404C /* FVSeatsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -232,10 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8D4D281DD8561B0016404C /* NSDictionary+FVExtension.m in Sources */,
 				AC8D4D1E1DD83B5F0016404C /* FVSeatsPickerIndexView.m in Sources */,
 				AC8D4D1D1DD83B5F0016404C /* FVSeatsPicker.m in Sources */,
 				AC8D4D071DD837FB0016404C /* FVViewController.m in Sources */,
 				AC8322141DD836A4007FDA75 /* main.m in Sources */,
+				AC8D4D251DD84AE70016404C /* FVSeatsViewController.m in Sources */,
 				AC8D4D041DD837570016404C /* FVAppDelegate.m in Sources */,
 				AC8D4D1C1DD83B5F0016404C /* FVSeatItem.m in Sources */,
 			);

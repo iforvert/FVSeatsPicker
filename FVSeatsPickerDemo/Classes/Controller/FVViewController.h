@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FVViewController : UIViewController
+@interface FVViewController : UITableViewController
 
 @end
