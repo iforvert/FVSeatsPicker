@@ -8,6 +8,7 @@
 
 #import "FVSeatsPickerIndexView.h"
 #import <CoreText/CoreText.h>
+
 @implementation FVSeatsPickerIndexView
 {
     NSParagraphStyle* _style;
