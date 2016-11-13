@@ -14,6 +14,9 @@
 		AC8322141DD836A4007FDA75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC83220D1DD836A4007FDA75 /* main.m */; };
 		AC8D4D041DD837570016404C /* FVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D4D031DD837570016404C /* FVAppDelegate.m */; };
 		AC8D4D071DD837FB0016404C /* FVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D4D061DD837FB0016404C /* FVViewController.m */; };
+		AC8D4D1C1DD83B5F0016404C /* FVSeatItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D4D171DD83B5F0016404C /* FVSeatItem.m */; };
+		AC8D4D1D1DD83B5F0016404C /* FVSeatsPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D4D191DD83B5F0016404C /* FVSeatsPicker.m */; };
+		AC8D4D1E1DD83B5F0016404C /* FVSeatsPickerIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D4D1B1DD83B5F0016404C /* FVSeatsPickerIndexView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,12 @@
 		AC8D4D031DD837570016404C /* FVAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FVAppDelegate.m; sourceTree = "<group>"; };
 		AC8D4D051DD837FB0016404C /* FVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FVViewController.h; sourceTree = "<group>"; };
 		AC8D4D061DD837FB0016404C /* FVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FVViewController.m; sourceTree = "<group>"; };
+		AC8D4D161DD83B5F0016404C /* FVSeatItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FVSeatItem.h; sourceTree = "<group>"; };
+		AC8D4D171DD83B5F0016404C /* FVSeatItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FVSeatItem.m; sourceTree = "<group>"; };
+		AC8D4D181DD83B5F0016404C /* FVSeatsPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FVSeatsPicker.h; sourceTree = "<group>"; };
+		AC8D4D191DD83B5F0016404C /* FVSeatsPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FVSeatsPicker.m; sourceTree = "<group>"; };
+		AC8D4D1A1DD83B5F0016404C /* FVSeatsPickerIndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FVSeatsPickerIndexView.h; sourceTree = "<group>"; };
+		AC8D4D1B1DD83B5F0016404C /* FVSeatsPickerIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FVSeatsPickerIndexView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,7 @@
 		AC8321C51DD835CC007FDA75 = {
 			isa = PBXGroup;
 			children = (
+				AC8D4D151DD83B5F0016404C /* FVSeatsPicker */,
 				AC8321FC1DD836A4007FDA75 /* FVSeatsPickerDemo */,
 				AC8321CF1DD835CC007FDA75 /* Products */,
 			);
@@ -128,6 +138,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AC8D4D151DD83B5F0016404C /* FVSeatsPicker */ = {
+			isa = PBXGroup;
+			children = (
+				AC8D4D161DD83B5F0016404C /* FVSeatItem.h */,
+				AC8D4D171DD83B5F0016404C /* FVSeatItem.m */,
+				AC8D4D181DD83B5F0016404C /* FVSeatsPicker.h */,
+				AC8D4D191DD83B5F0016404C /* FVSeatsPicker.m */,
+				AC8D4D1A1DD83B5F0016404C /* FVSeatsPickerIndexView.h */,
+				AC8D4D1B1DD83B5F0016404C /* FVSeatsPickerIndexView.m */,
+			);
+			path = FVSeatsPicker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,9 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8D4D1E1DD83B5F0016404C /* FVSeatsPickerIndexView.m in Sources */,
+				AC8D4D1D1DD83B5F0016404C /* FVSeatsPicker.m in Sources */,
 				AC8D4D071DD837FB0016404C /* FVViewController.m in Sources */,
 				AC8322141DD836A4007FDA75 /* main.m in Sources */,
 				AC8D4D041DD837570016404C /* FVAppDelegate.m in Sources */,
+				AC8D4D1C1DD83B5F0016404C /* FVSeatItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
