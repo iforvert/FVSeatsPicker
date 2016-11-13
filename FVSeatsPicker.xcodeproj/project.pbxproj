@@ -17,6 +17,8 @@
 		AC8D4D1C1DD83B5F0016404C /* FVSeatItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D4D171DD83B5F0016404C /* FVSeatItem.m */; };
 		AC8D4D1D1DD83B5F0016404C /* FVSeatsPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D4D191DD83B5F0016404C /* FVSeatsPicker.m */; };
 		AC8D4D1E1DD83B5F0016404C /* FVSeatsPickerIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D4D1B1DD83B5F0016404C /* FVSeatsPickerIndexView.m */; };
+		AC8D4D211DD83C840016404C /* districtOne.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC8D4D1F1DD83C840016404C /* districtOne.plist */; };
+		AC8D4D221DD83C840016404C /* districtTwo.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC8D4D201DD83C840016404C /* districtTwo.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		AC8D4D191DD83B5F0016404C /* FVSeatsPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FVSeatsPicker.m; sourceTree = "<group>"; };
 		AC8D4D1A1DD83B5F0016404C /* FVSeatsPickerIndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FVSeatsPickerIndexView.h; sourceTree = "<group>"; };
 		AC8D4D1B1DD83B5F0016404C /* FVSeatsPickerIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FVSeatsPickerIndexView.m; sourceTree = "<group>"; };
+		AC8D4D1F1DD83C840016404C /* districtOne.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = districtOne.plist; sourceTree = "<group>"; };
+		AC8D4D201DD83C840016404C /* districtTwo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = districtTwo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 		AC8322151DD836AF007FDA75 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AC8D4D1F1DD83C840016404C /* districtOne.plist */,
+				AC8D4D201DD83C840016404C /* districtTwo.plist */,
 				AC8321FD1DD836A4007FDA75 /* Assets.xcassets */,
 				AC8321FE1DD836A4007FDA75 /* LaunchScreen.storyboard */,
 				AC8322001DD836A4007FDA75 /* Main.storyboard */,
@@ -211,9 +217,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC8322131DD836A4007FDA75 /* Info.plist in Resources */,
+				AC8D4D221DD83C840016404C /* districtTwo.plist in Resources */,
 				AC8322101DD836A4007FDA75 /* Main.storyboard in Resources */,
 				AC83220E1DD836A4007FDA75 /* Assets.xcassets in Resources */,
 				AC83220F1DD836A4007FDA75 /* LaunchScreen.storyboard in Resources */,
+				AC8D4D211DD83C840016404C /* districtOne.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
