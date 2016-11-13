@@ -3,7 +3,8 @@
 
 <img src="https://img.shields.io/badge/build-passing-orange.svg?style=flat" alt="build passing" />
 <img src="https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="license MIT" />
-<img src="https://img.shields.io/badge/platform-iOS-green.svg?style=flat" alt="license MIT" />
+<img src="https://img.shields.io/badge/platform-iOS-green.svg?style=flat" alt="platform iOS" />
+<img src="https://img.shields.io/badge/pod-v0.6.0-blue.svg?style=flat" alt="pod v0.6.0" />
 
 ## Introduction
 
@@ -68,6 +69,9 @@ FVSeatsPicker is available through [CocoaPods](http://cocoapods.org). To install
 ```ruby
 pod "FVSeatsPicker"
 ```
+## Contact me
+
+iforvert@gmail.com
 
 ## License
 
