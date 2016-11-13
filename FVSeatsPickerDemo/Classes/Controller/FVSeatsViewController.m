@@ -50,7 +50,7 @@ static NSString * const kSourceB = @"districtTwo";
         [self.view addSubview:titleView];
         titleView;
     });
-    _titleView.frame = CGRectMake(0, 64, kScreenWidth, 150);
+    _titleView.frame = CGRectMake(0, 64, kScreenWidth, 120);
     _seatsPicker = ({
         FVSeatsPicker *picker = [FVSeatsPicker new];
         picker.backgroundColor = [UIColor rgba:0xF9F9F9FF];
@@ -61,10 +61,11 @@ static NSString * const kSourceB = @"districtTwo";
         [picker setImage:[UIImage imageNamed:@"seat_available"] forState:UIControlStateNormal];
         [picker setImage:[UIImage imageNamed:@"seat_unavailable"] forState:UIControlStateDisabled];
         [picker setImage:[UIImage imageNamed:@"seat_selected"] forState:UIControlStateSelected];
+
         [self.view addSubview:picker];
         picker;
     });
-    _seatsPicker.frame = CGRectMake(0, 214, kScreenWidth, kScreenHeight * 0.6);
+    _seatsPicker.frame = CGRectMake(0, 184, kScreenWidth, kScreenHeight * 0.6);
 }
 
 

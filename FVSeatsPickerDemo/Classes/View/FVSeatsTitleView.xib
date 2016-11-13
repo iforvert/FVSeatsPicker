@@ -16,14 +16,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LfC-Kb-ASa" userLabel="seperatorLineView">
-                    <rect key="frame" x="20" y="80" width="460" height="1"/>
+                    <rect key="frame" x="20" y="65" width="460" height="1"/>
                     <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="jTo-xP-oK6"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTQ-i4-zCD" userLabel="leftStateView">
-                    <rect key="frame" x="140" y="104" width="60" height="20"/>
+                    <rect key="frame" x="140" y="84" width="60" height="20"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seat_unavailable" translatesAutoresizingMaskIntoConstraints="NO" id="Oaw-GW-3js">
                             <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -44,7 +44,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MaO-4m-pnL" userLabel="rightStateView">
-                    <rect key="frame" x="300" y="104" width="60" height="22"/>
+                    <rect key="frame" x="300" y="84" width="60" height="22"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seat_selected" translatesAutoresizingMaskIntoConstraints="NO" id="2gL-85-aVK">
                             <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -65,7 +65,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oa8-f6-ayI" userLabel="centerStateView">
-                    <rect key="frame" x="220" y="106" width="60" height="20"/>
+                    <rect key="frame" x="220" y="86" width="60" height="20"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seat_available" translatesAutoresizingMaskIntoConstraints="NO" id="uQQ-Jq-6Nw">
                             <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -86,7 +86,7 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="舞台" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9C-PI-GWU" userLabel="titleView">
-                    <rect key="frame" x="229" y="30" width="42" height="20"/>
+                    <rect key="frame" x="229" y="25" width="42" height="20"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="42" id="jmI-4o-Bte"/>
                         <constraint firstAttribute="height" constant="20" id="ww5-0R-7fY"/>
@@ -101,13 +101,13 @@
                 <constraint firstAttribute="trailing" secondItem="LfC-Kb-ASa" secondAttribute="trailing" constant="20" id="7yY-wR-f4o"/>
                 <constraint firstItem="MaO-4m-pnL" firstAttribute="top" secondItem="oa8-f6-ayI" secondAttribute="top" constant="-2" id="95K-6u-XnB"/>
                 <constraint firstItem="ZTQ-i4-zCD" firstAttribute="top" secondItem="oa8-f6-ayI" secondAttribute="top" constant="-2" id="9Zv-VT-c9t"/>
-                <constraint firstItem="oa8-f6-ayI" firstAttribute="top" secondItem="LfC-Kb-ASa" secondAttribute="bottom" constant="25" id="GyQ-8w-qr3"/>
+                <constraint firstItem="oa8-f6-ayI" firstAttribute="top" secondItem="LfC-Kb-ASa" secondAttribute="bottom" constant="20" id="GyQ-8w-qr3"/>
                 <constraint firstItem="h9C-PI-GWU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SyN-aW-rsN"/>
                 <constraint firstItem="LfC-Kb-ASa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="a6J-vl-vGd"/>
-                <constraint firstItem="LfC-Kb-ASa" firstAttribute="top" secondItem="h9C-PI-GWU" secondAttribute="bottom" constant="30" id="bKG-cF-Kws"/>
+                <constraint firstItem="LfC-Kb-ASa" firstAttribute="top" secondItem="h9C-PI-GWU" secondAttribute="bottom" constant="20" id="bKG-cF-Kws"/>
                 <constraint firstItem="oa8-f6-ayI" firstAttribute="leading" secondItem="ZTQ-i4-zCD" secondAttribute="trailing" constant="20" id="cGG-Sb-PjD"/>
                 <constraint firstItem="oa8-f6-ayI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="e9K-Yn-mgb"/>
-                <constraint firstItem="h9C-PI-GWU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="jcr-Z2-cuR"/>
+                <constraint firstItem="h9C-PI-GWU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="jcr-Z2-cuR"/>
                 <constraint firstItem="MaO-4m-pnL" firstAttribute="leading" secondItem="oa8-f6-ayI" secondAttribute="trailing" constant="20" id="lJu-0n-cM4"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

@@ -24,6 +24,7 @@
 		AC8D4D2B1DD85AC50016404C /* FVSeatsTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D4D2A1DD85AC50016404C /* FVSeatsTitleView.m */; };
 		AC8D4D2D1DD85BCE0016404C /* FVSeatsTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8D4D2C1DD85BCE0016404C /* FVSeatsTitleView.xib */; };
 		AC8D4D301DD85E720016404C /* UIColor+FVExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D4D2F1DD85E720016404C /* UIColor+FVExtension.m */; };
+		AC8D4D321DD864C70016404C /* FVSeatsPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC8D4D311DD864C70016404C /* FVSeatsPicker.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		AC8D4D2C1DD85BCE0016404C /* FVSeatsTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FVSeatsTitleView.xib; sourceTree = "<group>"; };
 		AC8D4D2E1DD85E720016404C /* UIColor+FVExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FVExtension.h"; sourceTree = "<group>"; };
 		AC8D4D2F1DD85E720016404C /* UIColor+FVExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FVExtension.m"; sourceTree = "<group>"; };
+		AC8D4D311DD864C70016404C /* FVSeatsPicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FVSeatsPicker.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 		AC8D4D151DD83B5F0016404C /* FVSeatsPicker */ = {
 			isa = PBXGroup;
 			children = (
+				AC8D4D311DD864C70016404C /* FVSeatsPicker.bundle */,
 				AC8D4D161DD83B5F0016404C /* FVSeatItem.h */,
 				AC8D4D171DD83B5F0016404C /* FVSeatItem.m */,
 				AC8D4D181DD83B5F0016404C /* FVSeatsPicker.h */,
@@ -237,6 +240,7 @@
 				AC83220E1DD836A4007FDA75 /* Assets.xcassets in Resources */,
 				AC8D4D2D1DD85BCE0016404C /* FVSeatsTitleView.xib in Resources */,
 				AC83220F1DD836A4007FDA75 /* LaunchScreen.storyboard in Resources */,
+				AC8D4D321DD864C70016404C /* FVSeatsPicker.bundle in Resources */,
 				AC8D4D211DD83C840016404C /* districtOne.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

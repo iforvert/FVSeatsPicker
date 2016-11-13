@@ -33,10 +33,8 @@
 @property (nonatomic, assign) NSArray<FVSeatItem *>* seats;
 
 - (NSArray<FVSeatItem *>*)selectedSeats;
-
 - (void)setImage:(UIImage* )image forState:(UIControlState)state;
 - (void)reloadData;
-
 - (void)tryToChangeSelectionOfSeat:(FVSeatItem *)seat;
 
 @end

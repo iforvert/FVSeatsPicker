@@ -43,6 +43,7 @@ static const char kSeatInfo;
     if (self)
     {
         _imageDict = [NSMutableDictionary dictionary];
+        [self configDefaultSeatsIcon];
         _boundsInset = UIEdgeInsetsMake(20, 20, 20, 20);
         self.delegate = self;
     }
@@ -57,7 +58,31 @@ static const char kSeatInfo;
 
 - (void)setImage:(UIImage*)image forState:(UIControlState)state
 {
-    _imageDict[@(state)] = image;
+    if (image != nil)
+    {
+        _imageDict[@(state)] = image;
+    }
+    [self configDefaultSeatsIcon];
+}
+
+- (void)configDefaultSeatsIcon
+{
+    NSString *source1 = [[self fv_bundle] pathForResource:@"seat_available@2x" ofType:@"png"];
+    _imageDict[@(UIControlStateNormal)] = [[UIImage imageWithContentsOfFile:source1] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    NSString *source2 = [[self fv_bundle] pathForResource:@"seat_disabled@2x" ofType:@"png"];
+    _imageDict[@(UIControlStateDisabled)] = [[UIImage imageWithContentsOfFile:source2] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    NSString *source3 = [[self fv_bundle] pathForResource:@"seat_selected@2x" ofType:@"png"];
+    _imageDict[@(UIControlStateSelected)] = [[UIImage imageWithContentsOfFile:source3] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+}
+
+- (NSBundle *)fv_bundle
+{
+    static NSBundle *seatBundle = nil;
+    if (seatBundle == nil)
+    {
+        seatBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]] pathForResource:@"FVSeatsPicker" ofType:@"bundle"]];
+    }
+    return seatBundle;
 }
 
 - (NSArray<FVSeatItem *>*)selectedSeats
