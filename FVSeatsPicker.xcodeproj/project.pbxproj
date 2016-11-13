@@ -25,7 +25,18 @@
 		AC8D4D2D1DD85BCE0016404C /* FVSeatsTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8D4D2C1DD85BCE0016404C /* FVSeatsTitleView.xib */; };
 		AC8D4D301DD85E720016404C /* UIColor+FVExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D4D2F1DD85E720016404C /* UIColor+FVExtension.m */; };
 		AC8D4D321DD864C70016404C /* FVSeatsPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC8D4D311DD864C70016404C /* FVSeatsPicker.bundle */; };
+		ACCEE4321DD8F3AD0034A683 /* FVSeatsPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCEE4311DD8F3AD0034A683 /* FVSeatsPickerTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACCEE4341DD8F3AD0034A683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC8321C61DD835CC007FDA75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC8321CD1DD835CC007FDA75;
+			remoteInfo = FVSeatsPicker;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AC8321CE1DD835CC007FDA75 /* FVSeatsPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FVSeatsPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,10 +67,20 @@
 		AC8D4D2E1DD85E720016404C /* UIColor+FVExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FVExtension.h"; sourceTree = "<group>"; };
 		AC8D4D2F1DD85E720016404C /* UIColor+FVExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FVExtension.m"; sourceTree = "<group>"; };
 		AC8D4D311DD864C70016404C /* FVSeatsPicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FVSeatsPicker.bundle; sourceTree = "<group>"; };
+		ACCEE42F1DD8F3AD0034A683 /* FVSeatsPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FVSeatsPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACCEE4311DD8F3AD0034A683 /* FVSeatsPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FVSeatsPickerTests.m; sourceTree = "<group>"; };
+		ACCEE4331DD8F3AD0034A683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AC8321CB1DD835CC007FDA75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCEE42C1DD8F3AD0034A683 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,6 +95,7 @@
 			children = (
 				AC8D4D151DD83B5F0016404C /* FVSeatsPicker */,
 				AC8321FC1DD836A4007FDA75 /* FVSeatsPickerDemo */,
+				ACCEE4301DD8F3AD0034A683 /* FVSeatsPickerTests */,
 				AC8321CF1DD835CC007FDA75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				AC8321CE1DD835CC007FDA75 /* FVSeatsPicker.app */,
+				ACCEE42F1DD8F3AD0034A683 /* FVSeatsPickerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +198,15 @@
 			path = FVSeatsPicker;
 			sourceTree = "<group>";
 		};
+		ACCEE4301DD8F3AD0034A683 /* FVSeatsPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACCEE4311DD8F3AD0034A683 /* FVSeatsPickerTests.m */,
+				ACCEE4331DD8F3AD0034A683 /* Info.plist */,
+			);
+			path = FVSeatsPickerTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,6 +227,24 @@
 			productReference = AC8321CE1DD835CC007FDA75 /* FVSeatsPicker.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ACCEE42E1DD8F3AD0034A683 /* FVSeatsPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACCEE4381DD8F3AD0034A683 /* Build configuration list for PBXNativeTarget "FVSeatsPickerTests" */;
+			buildPhases = (
+				ACCEE42B1DD8F3AD0034A683 /* Sources */,
+				ACCEE42C1DD8F3AD0034A683 /* Frameworks */,
+				ACCEE42D1DD8F3AD0034A683 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACCEE4351DD8F3AD0034A683 /* PBXTargetDependency */,
+			);
+			name = FVSeatsPickerTests;
+			productName = FVSeatsPickerTests;
+			productReference = ACCEE42F1DD8F3AD0034A683 /* FVSeatsPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +258,12 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = MBTTHTUMW2;
 						ProvisioningStyle = Automatic;
+					};
+					ACCEE42E1DD8F3AD0034A683 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = MBTTHTUMW2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AC8321CD1DD835CC007FDA75;
 					};
 				};
 			};
@@ -225,6 +281,7 @@
 			projectRoot = "";
 			targets = (
 				AC8321CD1DD835CC007FDA75 /* FVSeatsPicker */,
+				ACCEE42E1DD8F3AD0034A683 /* FVSeatsPickerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,6 +299,13 @@
 				AC83220F1DD836A4007FDA75 /* LaunchScreen.storyboard in Resources */,
 				AC8D4D321DD864C70016404C /* FVSeatsPicker.bundle in Resources */,
 				AC8D4D211DD83C840016404C /* districtOne.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCEE42D1DD8F3AD0034A683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +329,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACCEE42B1DD8F3AD0034A683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCEE4321DD8F3AD0034A683 /* FVSeatsPickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACCEE4351DD8F3AD0034A683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC8321CD1DD835CC007FDA75 /* FVSeatsPicker */;
+			targetProxy = ACCEE4341DD8F3AD0034A683 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AC8321FE1DD836A4007FDA75 /* LaunchScreen.storyboard */ = {
@@ -403,6 +483,32 @@
 			};
 			name = Release;
 		};
+		ACCEE4361DD8F3AD0034A683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MBTTHTUMW2;
+				INFOPLIST_FILE = FVSeatsPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iforvert.FVSeatsPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FVSeatsPicker.app/FVSeatsPicker";
+			};
+			name = Debug;
+		};
+		ACCEE4371DD8F3AD0034A683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MBTTHTUMW2;
+				INFOPLIST_FILE = FVSeatsPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iforvert.FVSeatsPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FVSeatsPicker.app/FVSeatsPicker";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -423,6 +529,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		ACCEE4381DD8F3AD0034A683 /* Build configuration list for PBXNativeTarget "FVSeatsPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACCEE4361DD8F3AD0034A683 /* Debug */,
+				ACCEE4371DD8F3AD0034A683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
