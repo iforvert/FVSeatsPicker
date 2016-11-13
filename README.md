@@ -40,7 +40,7 @@ FVSeatsPicker can be added as a normal View to the view, as we usually add other
 }
 ```
 
-我们可以实现`FVSeatsPickerDelegate`方法来获取用户选取的座位信息，和控制用户在进行选座时的行为。
+We can implement the `FVSeatsPickerDelegate` method to get the seat information selected by the user, and control the behavior of the user when making selections.
 
 ```objc
 - (BOOL)shouldSelectSeat:(FVSeatItem *)seatInfo inPicker:(FVSeatsPicker* )picker;
