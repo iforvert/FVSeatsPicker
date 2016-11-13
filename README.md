@@ -1,11 +1,6 @@
 # FVSeatsPicker
  A simple and efficient seat control, it can display a variety of seating styles, and supports custom stretching ratio, seat information transmission, and so on, I hope it is you want.
 
-<img src="https://img.shields.io/badge/build-passing-orange.svg?style=flat" alt="build passing" />
-<img src="https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="license MIT" />
-<img src="https://img.shields.io/badge/platform-iOS-green.svg?style=flat" alt="platform iOS" />
-<img src="https://img.shields.io/badge/pod-v0.6.0-blue.svg?style=flat" alt="pod v0.6.0" />
-
 ## Introduction
 
 
