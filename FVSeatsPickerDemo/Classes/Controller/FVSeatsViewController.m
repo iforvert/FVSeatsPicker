@@ -8,14 +8,19 @@
 
 #import "FVSeatsViewController.h"
 #import "NSDictionary+FVExtension.h"
+#import "UIColor+FVExtension.h"
 #import "FVSeatsPicker.h"
+#import "FVSeatsTitleView.h"
 
 static NSString * const kSourceA = @"districtOne";
 static NSString * const kSourceB = @"districtTwo";
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
 @interface FVSeatsViewController ()<FVSeatsPickerDelegate>
 
 @property (nonatomic, strong) FVSeatsPicker *seatsPicker;
+@property (nonatomic, strong) FVSeatsTitleView *titleView;
 
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
 @property (nonatomic, strong) NSArray <FVSeatItem *>* seatsInfo;
@@ -34,14 +39,21 @@ static NSString * const kSourceB = @"districtTwo";
     
     [self configBaseInfo];
     [self loadData];
-
 }
 
 - (void)configBaseInfo
 {
-    self.navigationController.navigationBar.tintColor = [UIColor orangeColor];_seatsPicker = ({
+    self.navigationController.navigationBar.tintColor = [UIColor orangeColor];
+    
+    _titleView = ({
+        FVSeatsTitleView *titleView = [FVSeatsTitleView seleSeatsTitleView];
+        [self.view addSubview:titleView];
+        titleView;
+    });
+    _titleView.frame = CGRectMake(0, 64, kScreenWidth, 150);
+    _seatsPicker = ({
         FVSeatsPicker *picker = [FVSeatsPicker new];
-        picker.backgroundColor = [self rgba:0xF9F9F9FF];
+        picker.backgroundColor = [UIColor rgba:0xF9F9F9FF];
         picker.cellSize = CGSizeMake(24, 24);
         picker.minimumZoomScale = 1;
         picker.maximumZoomScale = 2;
@@ -52,21 +64,7 @@ static NSString * const kSourceB = @"districtTwo";
         [self.view addSubview:picker];
         picker;
     });
-    CGFloat width = [UIScreen mainScreen].bounds.size.width;
-    CGFloat height = [UIScreen mainScreen].bounds.size.height;
-    _seatsPicker.frame = CGRectMake(0, 200, width, height * 0.6);
-}
-
-#pragma mark - tool method
-
-- (UIColor *)r:(uint8_t)r g:(uint8_t)g b:(uint8_t)b a:(uint8_t)a
-{
-    return [UIColor colorWithRed:r/255. green:g/255. blue:b/255. alpha:a/255.];
-}
-
-- (UIColor *)rgba:(NSUInteger)rgba
-{
-    return [self r:(rgba >> 24)&0xFF g:(rgba >> 16)&0xFF b:(rgba >> 8)&0xFF a:rgba&0xFF];
+    _seatsPicker.frame = CGRectMake(0, 214, kScreenWidth, kScreenHeight * 0.6);
 }
 
 

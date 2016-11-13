@@ -21,6 +21,9 @@
 		AC8D4D221DD83C840016404C /* districtTwo.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC8D4D201DD83C840016404C /* districtTwo.plist */; };
 		AC8D4D251DD84AE70016404C /* FVSeatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D4D241DD84AE70016404C /* FVSeatsViewController.m */; };
 		AC8D4D281DD8561B0016404C /* NSDictionary+FVExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D4D271DD8561B0016404C /* NSDictionary+FVExtension.m */; };
+		AC8D4D2B1DD85AC50016404C /* FVSeatsTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D4D2A1DD85AC50016404C /* FVSeatsTitleView.m */; };
+		AC8D4D2D1DD85BCE0016404C /* FVSeatsTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8D4D2C1DD85BCE0016404C /* FVSeatsTitleView.xib */; };
+		AC8D4D301DD85E720016404C /* UIColor+FVExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8D4D2F1DD85E720016404C /* UIColor+FVExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,11 @@
 		AC8D4D241DD84AE70016404C /* FVSeatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FVSeatsViewController.m; sourceTree = "<group>"; };
 		AC8D4D261DD8561B0016404C /* NSDictionary+FVExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FVExtension.h"; sourceTree = "<group>"; };
 		AC8D4D271DD8561B0016404C /* NSDictionary+FVExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FVExtension.m"; sourceTree = "<group>"; };
+		AC8D4D291DD85AC50016404C /* FVSeatsTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FVSeatsTitleView.h; sourceTree = "<group>"; };
+		AC8D4D2A1DD85AC50016404C /* FVSeatsTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FVSeatsTitleView.m; sourceTree = "<group>"; };
+		AC8D4D2C1DD85BCE0016404C /* FVSeatsTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FVSeatsTitleView.xib; sourceTree = "<group>"; };
+		AC8D4D2E1DD85E720016404C /* UIColor+FVExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FVExtension.h"; sourceTree = "<group>"; };
+		AC8D4D2F1DD85E720016404C /* UIColor+FVExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FVExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +98,6 @@
 			children = (
 				AC8322031DD836A4007FDA75 /* Category */,
 				AC8322041DD836A4007FDA75 /* Controller */,
-				AC8322071DD836A4007FDA75 /* Model */,
 				AC8322081DD836A4007FDA75 /* Others */,
 				AC83220B1DD836A4007FDA75 /* View */,
 			);
@@ -102,6 +109,8 @@
 			children = (
 				AC8D4D261DD8561B0016404C /* NSDictionary+FVExtension.h */,
 				AC8D4D271DD8561B0016404C /* NSDictionary+FVExtension.m */,
+				AC8D4D2E1DD85E720016404C /* UIColor+FVExtension.h */,
+				AC8D4D2F1DD85E720016404C /* UIColor+FVExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -117,13 +126,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		AC8322071DD836A4007FDA75 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		AC8322081DD836A4007FDA75 /* Others */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +138,9 @@
 		AC83220B1DD836A4007FDA75 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC8D4D291DD85AC50016404C /* FVSeatsTitleView.h */,
+				AC8D4D2A1DD85AC50016404C /* FVSeatsTitleView.m */,
+				AC8D4D2C1DD85BCE0016404C /* FVSeatsTitleView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 				AC8D4D221DD83C840016404C /* districtTwo.plist in Resources */,
 				AC8322101DD836A4007FDA75 /* Main.storyboard in Resources */,
 				AC83220E1DD836A4007FDA75 /* Assets.xcassets in Resources */,
+				AC8D4D2D1DD85BCE0016404C /* FVSeatsTitleView.xib in Resources */,
 				AC83220F1DD836A4007FDA75 /* LaunchScreen.storyboard in Resources */,
 				AC8D4D211DD83C840016404C /* districtOne.plist in Resources */,
 			);
@@ -250,6 +256,8 @@
 				AC8D4D251DD84AE70016404C /* FVSeatsViewController.m in Sources */,
 				AC8D4D041DD837570016404C /* FVAppDelegate.m in Sources */,
 				AC8D4D1C1DD83B5F0016404C /* FVSeatItem.m in Sources */,
+				AC8D4D2B1DD85AC50016404C /* FVSeatsTitleView.m in Sources */,
+				AC8D4D301DD85E720016404C /* UIColor+FVExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
