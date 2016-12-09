@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = 'FVSeatsPicker'
-s.version      = '0.6.0'
+s.version      = '0.9.0'
 s.summary      = 'An easy way to achieve seats display'
 s.homepage     = 'https://github.com/Upliver/FVSeatsPicker'
 s.license      = 'MIT'
