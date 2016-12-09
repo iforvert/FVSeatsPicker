@@ -62,7 +62,10 @@ static const char kSeatInfo;
     {
         _imageDict[@(state)] = image;
     }
-    [self configDefaultSeatsIcon];
+    else
+    {
+        [self configDefaultSeatsIcon];
+    }
 }
 
 - (void)configDefaultSeatsIcon

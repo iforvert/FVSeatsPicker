@@ -59,9 +59,9 @@ static NSString * const kSourceB = @"districtTwo";
         picker.maximumZoomScale = 2;
         picker.seatsDelegate = self;
 // 你可以在这里设置图片，同时你也可以不设置FVSeatsPicker内部会自动设置默认的图片，如果设置新的图片将会采用最新设置的图片
-//        [picker setImage:[UIImage imageNamed:@"seat_available"] forState:UIControlStateNormal];
-//        [picker setImage:[UIImage imageNamed:@"seat_unavailable"] forState:UIControlStateDisabled];
-//        [picker setImage:[UIImage imageNamed:@"seat_selected"] forState:UIControlStateSelected];
+        [picker setImage:[UIImage imageNamed:@"seat_available"] forState:UIControlStateNormal];
+        [picker setImage:[UIImage imageNamed:@"seat_unavailable"] forState:UIControlStateDisabled];
+        [picker setImage:[UIImage imageNamed:@"seat_selected"] forState:UIControlStateSelected];
 
         [self.view addSubview:picker];
         picker;
